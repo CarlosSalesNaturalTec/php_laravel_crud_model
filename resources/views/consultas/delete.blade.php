@@ -15,8 +15,8 @@
         Cartão SUS : {{$paciente->cartao_sus}}<br>
         Descrição : {{$consulta->descricao}}<br>
         <br>
-        Data de Cadastro : {{$consulta->created_at->format('d/m/Y h:m:s') }}<br>
-        Última Atualização : {{$consulta->updated_at->format('d/m/Y h:m:s')}}<br>
+        Data de Cadastro : {{$consulta->created_at->format('d/m/Y h:i:s') }}<br>
+        Última Atualização : {{$consulta->updated_at->format('d/m/Y h:i:s')}}<br>
     </div>
     <hr>
     <form action="{{ route('consultas.destroy', ['id' => $consulta->id]) }}" method="POST">

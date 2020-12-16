@@ -52,7 +52,7 @@
                 <td>{{$pacientes->nome}}</td>
                 <td>{{$pacientes->cartao_sus}}</td>
                 <td>{{$pacientes->nascimento->format('d/m/Y')}}</td>
-                <td>{{$pacientes->updated_at->format('d/m/Y h:m:s')}}</td>
+                <td>{{$pacientes->updated_at->format('d/m/Y h:i:s')}}</td>
               </tr>
             @endforeach
           

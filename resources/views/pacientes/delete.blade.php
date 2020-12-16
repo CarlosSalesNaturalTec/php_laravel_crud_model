@@ -10,8 +10,8 @@
         Cartão SUS : {{$paciente->cartao_sus}}<br>
         Nascimento : {{$paciente->nascimento->format('d/m/Y')}}<br>
         <br>
-        Data de Cadastro : {{$paciente->created_at->format('d/m/Y h:m:s') }}<br>
-        Última Atualização : {{$paciente->updated_at->format('d/m/Y h:m:s')}}<br>
+        Data de Cadastro : {{$paciente->created_at->format('d/m/Y h:i:s') }}<br>
+        Última Atualização : {{$paciente->updated_at->format('d/m/Y h:i:s')}}<br>
     </div>
     <hr>
     <form action="{{ route('pacientes.destroy', ['id' => $paciente->id]) }}" method="POST">
